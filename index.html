@@ -22,11 +22,14 @@
             <main class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul v-show="emailList.length === 10">
+                        <ul v-if="emailList.length === 10">
                             <li v-for="email in emailList">
                                 {{email}}
                             </li>
                         </ul>
+                        <h2 v-else>
+                            Attendere
+                        </h2>
                     </div>
                 </div>
             </main>
