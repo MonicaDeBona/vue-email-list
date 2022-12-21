@@ -14,7 +14,22 @@
     </head>
     <body>
         <div id="app">
-
+            <header>
+                <h1>
+                    Vue Email List
+                </h1>
+            </header>
+            <main class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li v-for="email in emailList">
+                                {{email}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
         <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
