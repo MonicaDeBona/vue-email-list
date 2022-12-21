@@ -6,3 +6,16 @@ Descrizione:
 Bonus
     Far comparire gli indirizzi email solamente quando sono stati tutti generati.
 */
+
+const {createApp} = Vue;
+
+createApp({
+    data(){
+        return{
+            
+        }
+    },
+
+    methods: {
+    },
+}).mount("#app")
