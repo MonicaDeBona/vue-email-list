@@ -22,8 +22,8 @@
             <main class="container">
                 <div class="row">
                     <div class="col-12">
-                        <ul>
-                            <li v-show="emailList.length === 10" v-for="email in emailList">
+                        <ul v-show="emailList.length === 10">
+                            <li v-for="email in emailList">
                                 {{email}}
                             </li>
                         </ul>
